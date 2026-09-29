@@ -40,7 +40,7 @@ which is why the archives matter.
 | `B614D5EC` | Micronas | 8GB | 4 | 4KiB | **validated** |
 | `2555D5EC` | Micronas | 8GB | 4 | 2KiB | needed |
 | `A585D598` | Toshiba | 4GB | 2 | 2KiB | needed |
-| `A585D598` | Toshiba | 8GB | 4 | 2KiB | needed |
+| `A585D598` | Toshiba | 8GB | 4 | 2KiB | **validated** (MB249, exact eight-byte ID) |
 | `BA94D598` | Toshiba | 4GB | 2 | 4KiB | needed |
 | `BA94D598` | Toshiba | 8GB | 4 | 4KiB | needed |
 | `A5D5D589` | Intel | 4GB | 2 | 2KiB | **validated** |
@@ -51,6 +51,15 @@ which is why the archives matter.
 | `A5D5D52C` | Micron | 8GB | 4 | 2KiB | needed |
 | `3E94D52C` | Micron | 4GB | 2 | 4KiB | needed |
 | `3ED5D72C` | Micron | 8GB | 2 | 4KiB | needed |
+
+The MB249 archive was captured before destructive validation. With the
+owner's authorization, `NAND_CHECK_ALLOW_WRITE_TEST` erased block 8 on bank
+0 and blocks 16, 4095, 4096 and 4097 on all four banks, then passed its
+write/readback tests (16/16 sweep, 4/4 bank isolation). A subsequent
+normal Rockbox bootloader loaded `rockbox.ipod` from a newly formatted
+FAT32 volume and started Rockbox on the MB249 device. Those 17 blocks
+previously contained user data. The archive does not contain their user
+page contents and cannot restore them.
 
 "Reported" means someone has seen that chip in a unit, but no check archive
 has been collected from it yet. The id is the first four READ ID bytes read

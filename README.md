@@ -25,6 +25,16 @@ writes anything, so it is safe to run on any unit.
 Chips validated so far (Micronas, Hynix, Toshiba and Intel units, across both
 4 GB and 8 GB) are listed under [Devices used](NANO3G_TEST_UNITS.md).
 
+### Toshiba MB249 and fast boot
+
+The Toshiba `98 D5 85 A5 EA 12 02 00` part used by an 8 GB MB249 unit has
+now been erase/program/read-back validated on all four chip enables. The FTL
+also verifies mapped blocks on first access instead of reading every populated
+page during every boot. On the hardware-tested unit with about 4 GB of music,
+startup dropped from roughly 20 minutes to roughly 20 seconds while retaining
+torn-write recovery. See [Fast boot and MB249 validation](port-docs/NANO3G_MB249_FAST_BOOT.md)
+for the design, tests, upgrade steps, rollback procedure and limitations.
+
 ---
 
 ## Get the app

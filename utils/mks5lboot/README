@@ -10,6 +10,8 @@ device:
 Nano 3G NAND support is limited to chips that have been validated on real
 hardware. Currently validated:
   - Hynix A514D3AD (4GB units)
+  - Toshiba A585D598, exact ID 98 D5 85 A5 EA 12 02 00 (MB249 8GB,
+    four chip enables, 2048-byte pages)
   - Samsung maker 0xEC / device 0xD5 / ext-id 0xB6, 4096-byte pages, MLC
     (8GB units)
 The installer cannot identify the NAND while the device is in DFU mode; see
