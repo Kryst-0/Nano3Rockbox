@@ -38,13 +38,23 @@ startup dropped from roughly 20 minutes to roughly 20 seconds while retaining
 torn-write recovery. See [Fast boot and MB249 validation](port-docs/NANO3G_MB249_FAST_BOOT.md)
 for the design, tests, upgrade steps, rollback procedure and limitations.
 
+The hardware-tested files are published as the
+[v2.4.5 MB249 fast-boot pre-release](https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot).
+That archive is an **update package for an existing Nano3Rockbox-formatted
+device**, not a universal first-time installer. Check the full NAND ID and
+four-chip-enable topology before using it.
+
 ---
 
-## Get the app
+## Downloads
 
-Download the latest installer from the
-[Releases page](../../releases), or build it yourself
-([instructions](port-docs/BUILDING.md)).
+The [Releases page](https://github.com/Kryst-0/Nano3Rockbox/releases) contains
+the published, checksum-identified downloads. The current hardware-tested
+MB249 package is
+[v2.4.5-mb249-fastboot](https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot).
+For a new installation, build the Windows app yourself
+([instructions](port-docs/BUILDING.md)); the MB249 ZIP alone does not perform a
+first-time format or install.
 
 It is a single Windows program — nothing else to install. Right-click it and
 choose **Run as administrator** (it needs that to access the iPod's storage).
