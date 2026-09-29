@@ -7,6 +7,12 @@ device:
   - iPod Classic 6G
   - iPod Nano 3G
 
+The hardware-tested MB249 firmware, temporary DFU image, permanent bootloader
+and exact checksums are published in the v2.4.5 MB249 fast-boot pre-release:
+https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot
+The archive is an update package for an existing Nano3Rockbox-formatted unit,
+not a universal first-time installer.
+
 Nano 3G NAND support is limited to chips that have been validated on real
 hardware. Currently validated:
   - Hynix A514D3AD (4GB units)
