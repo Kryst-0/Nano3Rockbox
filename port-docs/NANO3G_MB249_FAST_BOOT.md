@@ -9,6 +9,20 @@ mount-time verification change tested on an 8 GB iPod Nano 3G. It also gives a
 non-destructive update procedure for an iPod that already uses Nano3Rockbox's
 on-flash format.
 
+## Hardware-tested download
+
+The exact files used for this result are available in the
+[v2.4.5 MB249 fast-boot pre-release](https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot).
+Download `Nano3Rockbox-MB249-fastboot-2026-09-28.zip` and verify its SHA-256:
+
+```text
+C0B5C82BF90D1F46CAA31D4B03A404FDB8C43BB6D7EF903BD06A6D831ABB4B9F
+```
+
+The archive is for a device already using Nano3Rockbox's on-flash format. It
+is not a universal first-time installer and must not be used on a different
+NAND identity or topology.
+
 ## Hardware tested
 
 - iPod model: MB249, 8 GB

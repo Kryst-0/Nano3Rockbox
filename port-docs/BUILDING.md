@@ -6,6 +6,12 @@ Most people do not need this — the [Windows app](../README.md#install-rockbox)
 ships everything prebuilt. This page is for developers who want to build the
 firmware, the tools, or the installer themselves.
 
+The reproducible hardware-tested MB249 binaries and their source patch are
+also bundled in the
+[v2.4.5 MB249 fast-boot pre-release](https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot).
+Use that archive only for the exact validated hardware described in the
+compatibility matrix.
+
 ## Toolchain
 
 Requires an `arm-elf-eabi` toolchain, which Rockbox's own script installs:

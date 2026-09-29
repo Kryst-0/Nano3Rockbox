@@ -7,6 +7,11 @@ Compatibility is determined by the NAND identity reported by **Check my iPod
 Apple shipped several different NAND packages in otherwise identical Nano 3G
 units.
 
+The published MB249 files are in the
+[v2.4.5 fast-boot pre-release](https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot).
+They apply only to the exact guarded MB249 row below and only as an update to
+an existing Nano3Rockbox-formatted device.
+
 ## Status meanings
 
 - **Validated:** erase/program/read-back and a multi-bank sweep passed on real
