@@ -1,5 +1,9 @@
 # Nano 3G MB249 validation and fast boot
 
+This procedure applies only to the validated MB249 identity and topology. See
+the [central NAND compatibility table](CHIP_COMPATIBILITY.md) before reusing it
+on another Nano 3G.
+
 This document describes the Toshiba MB249 hardware validation and the FTL
 mount-time verification change tested on an 8 GB iPod Nano 3G. It also gives a
 non-destructive update procedure for an iPod that already uses Nano3Rockbox's

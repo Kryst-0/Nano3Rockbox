@@ -1,5 +1,8 @@
 # iPod Nano 3G test units used for NAND validation
 
+For a concise install-time summary, including configurations that deliberately
+remain read-only, see [NAND compatibility](port-docs/CHIP_COMPATIBILITY.md).
+
 This file records the physical iPod Nano 3G (N46 / S5L8702) units this project
 has used to hardware-validate NAND chips for the page-level FTL (v2). Each row
 in the validated-chip table in
