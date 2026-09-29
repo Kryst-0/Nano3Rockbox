@@ -7,6 +7,12 @@ collects what we need to validate your chip. It **changes nothing on your
 iPod**: nothing is installed, and nothing is written to its NAND. The image
 runs from RAM and is gone when the iPod restarts.
 
+The read-only checker and the exact hardware-tested MB249 update files are
+bundled in the
+[v2.4.5 MB249 fast-boot pre-release](https://github.com/Kryst-0/Nano3Rockbox/releases/tag/v2.4.5-mb249-fastboot).
+The release restriction does not replace this check: confirm the complete ID
+and bank count on every device before installing.
+
 ## Which chip is in your iPod
 
 Every Nano 3G is model A1236, whichever NAND it has, so the chip has to be
